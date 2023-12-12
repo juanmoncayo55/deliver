@@ -1,0 +1,63 @@
+@use 'base/variables' as v;
+
+.wrapper-header{
+	background-color: v.$purpura;
+	position: relative;
+	&:after{
+	    content: "";
+	    background-image: url(../../src/img/wave-haikei.svg);
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: top;
+	    position: absolute;
+	    top: 100%;
+	    left: 0;
+	    right: 0;
+	    width: 100%;
+	    padding: 6%;
+	}
+}
+.header{
+	padding: 1rem;
+	padding-top:1.5rem;
+	&-contenedor{
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	}
+	&-logo{
+		display: flex;
+	    align-items: center;
+	    column-gap: 0.5rem;
+		&__img{
+		    max-width: 108px;
+    		width: 4rem;
+		}
+		&__title{
+			color: v.$amarillo;
+			font-family: v.$fuenteTitulo;
+			font-size: 3.8rem;
+		}
+	}
+	&-contact-button{
+		background-color: v.$amarillo;
+	    border-radius: 2rem;
+	    font-size: 1.6rem;
+	    font-weight: bold;
+	    padding: 1rem 2rem;
+		color: v.$negro;
+	}
+}
+.navigation{
+	display: flex;
+    column-gap: 3rem;
+	&-link{
+		color: v.$blanco;
+		font-weight: bold;
+		font-size: 1.6rem;
+		&:hover{
+			color: v.$amarillo;
+			transition: color .3s ease-in-out;
+		}
+	}
+}

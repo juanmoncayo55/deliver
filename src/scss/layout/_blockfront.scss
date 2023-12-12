@@ -1,0 +1,54 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.blockfront{
+	padding-top: 1rem;
+	&-contenedor{
+		@include m.grid(2, 5rem);
+		align-items: center;
+	}
+	&-paragraphs{
+		&__diagonal{
+			display:flex;
+			margin-bottom: 2rem;
+			img{
+			    width: 20px;
+	    		height: 20px;
+			}
+		}
+		&__title{
+			color: v.$blanco;
+			font-size: 5.5rem;
+			margin-bottom:0;
+		}
+		&__description{
+			color: v.$blanco;
+			font-size: 1.6rem;
+			margin: 2rem 0;
+		}
+		&__apps{
+			display: flex;
+			column-gap: 2rem;
+			border-top: 2px solid #4C3397;
+			padding-top: 2rem;
+			&-link img{
+				width: 135px;
+			}
+		}
+	}
+	&-graphic img{		
+		animation: moto 1.5s ease-in-out infinite;
+	}
+}
+
+@keyframes moto{
+	0%{
+		transform: translateY(0px);
+	}
+	50%{
+		transform: translateY(-20px);
+	}
+	100%{
+		transform: translateY(0px);
+	}
+}

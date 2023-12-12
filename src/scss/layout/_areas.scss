@@ -1,0 +1,37 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+.areas{
+    margin-top: 15%;
+    &-contenedor{
+
+    }
+	&__text{
+		font-size: 1.6rem;
+	}
+	&-picks{
+		display: flex;
+    	column-gap: 2rem;
+        margin: 3rem 0;
+		&__pick{
+			font-size: 1.8rem;
+			color: #184379;
+		    display: flex;
+		    align-items: center;
+			&:first-child{color: v.$azul;}
+			&:last-child{color: v.$rojo;}
+			&:before{
+				content: "";
+			    width: 20px;
+			    height: 20px;
+			    margin-right: 8px;
+			    padding: 0.5rem;
+			    border-radius: 50%;
+			    display: inline-block;
+			    border: 2px solid;
+			}
+		}
+	}
+}
+
+.text-sp{margin: 3rem 0;}
+.text-sp-map{margin-bottom: 3rem;}

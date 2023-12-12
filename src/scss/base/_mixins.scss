@@ -1,0 +1,7 @@
+@use 'base/variables' as v;
+
+@mixin grid($numero_columnas, $espaciado){
+	display: grid;
+	grid-template-columns: repeat($numero_columnas, 1fr);
+	gap: $espaciado;
+}

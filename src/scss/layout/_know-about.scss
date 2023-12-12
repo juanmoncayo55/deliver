@@ -1,0 +1,29 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.know-about{
+	background-color: v.$blanco;
+	padding: 3rem 0;
+	&__cards{
+		@include m.grid(4,4rem);
+		justify-content: center;
+		margin: 4rem 0;
+		&-card{
+			text-align: center;
+		    background-color: v.$grisClaro;
+		    padding: 1rem 6rem;
+		    border-radius: 8px;
+			&_num{
+				font-size: 5rem;
+			    font-weight: bold;
+			}
+			&_text{
+				color: #4C3397;
+			    font-size: 2.5rem;
+			    text-transform: uppercase;
+			    font-weight: 600;
+			    line-height: 2.8rem;
+			}
+		}
+	}
+}
