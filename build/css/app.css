@@ -584,7 +584,7 @@ h3 {
 }
 .good-message__boton {
   background-color: #4C3397;
-  border-radius: 1rem;
+  border-radius: 2rem;
   font-size: 1.6rem;
   font-weight: bold;
   padding: 1rem 2rem;
@@ -625,6 +625,10 @@ h3 {
 }
 .good-message__cards-card img {
   width: 95%;
+}
+
+.boton-card {
+  border-radius: 1rem;
 }
 
 .m-sectitle {

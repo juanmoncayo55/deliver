@@ -26,7 +26,7 @@
 	}
 	&__boton{
 		background-color: v.$purpuraOscuro;
-	    border-radius: 1rem;
+	    border-radius: 2rem;
 	    font-size: 1.6rem;
 	    font-weight: bold;
 	    padding: 1rem 2rem;
@@ -67,3 +67,4 @@
 		}
 	}
 }
+.boton-card{ border-radius: 1rem; }
