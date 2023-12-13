@@ -685,6 +685,85 @@ h3 {
   display: inline-block;
 }
 
+.footer {
+  background-color: #4C3397;
+  color: #FFFFFF;
+  position: relative;
+  padding-top: 5rem;
+}
+.footer-contenedor {
+  padding: 2rem 0;
+}
+.footer-contactInformation {
+  display: flex;
+  column-gap: 3rem;
+  align-items: stretch;
+  justify-content: center;
+}
+.footer-contactInformation__logoText {
+  background: #291468;
+  display: grid;
+  color: #fFF;
+  grid-template-areas: "logo texto1 texto1" "logo texto2 texto2";
+  align-items: center;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.footer-contactInformation__logoText-span {
+  grid-area: logo;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5d3ebc;
+  margin-right: 1rem;
+}
+.footer-contactInformation__logoText-span i {
+  font-size: 2.5rem;
+}
+.footer-contactInformation__logoText-title {
+  color: #5d3ebc;
+  grid-area: texto1;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+.footer-contactInformation__logoText-subtitle {
+  grid-area: texto2;
+  font-size: 1.6rem;
+}
+.footer-contactInformation__emailPhone {
+  background: #5D3EBC;
+  flex: 3;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0rem;
+  border-radius: 1rem;
+}
+.footer-contactInformation__emailPhone-sec {
+  flex: 1;
+  display: grid;
+  grid-template-areas: "icono texto texto";
+  font-size: 1.6rem;
+}
+.footer-contactInformation__emailPhone-sec i {
+  grid-area: icono;
+  font-size: 4.5rem;
+  width: fit-content;
+  justify-self: center;
+  align-self: center;
+}
+.footer-contactInformation__emailPhone-sec span {
+  grid-area: texto;
+  align-self: center;
+}
+.footer-contactInformation__emailPhone-sec:last-child {
+  border-left: 1px solid #291468;
+}
+
 .m-sectitle {
   display: flex;
   align-items: center;
