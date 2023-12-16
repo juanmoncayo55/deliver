@@ -75,4 +75,98 @@
 			}
 		}
 	}
+	&-manesite{
+		margin: 6rem 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+    	column-gap: 7rem;
+		& .title{
+		    font-size: 1.5rem;
+		    font-weight: bold;
+		    text-transform: uppercase;
+		    margin-bottom: 2.5rem;
+		    letter-spacing: 2px;
+		}
+		& .description{
+			font-size: 1.6rem;
+		}
+		&__s1{
+			flex: 3;
+		}
+		&__s2{
+			flex: 2;
+			&-link{
+				display: block;
+				margin-bottom: 2rem;
+				transition: .3s all ease-in-out;
+				&:last-child{margin-bottom: 0;}
+				& img{
+					width: 135px;
+				    border: 2px solid #FFF;
+    				border-radius: 1rem;
+				}
+				&:hover{
+					transform: scale(1.1);
+				}
+			}
+		}
+		&__s3{
+			flex: 2;
+		}
+		&__s4{
+			flex: 3;
+			& .description{ margin-top: 4rem; }
+		}
+
+		&__formulario{
+			display: flex;
+		    flex-direction: column;
+		    align-items: flex-start;
+		    justify-content: center;
+		    row-gap: 2rem;
+		    &-input{
+			    font-size: 1.6rem;
+		    	padding: 1rem;
+			    padding-left: 2rem;
+			    border-radius: 2rem;
+			    width: 100%;
+				font-weight: 600;
+			    &::placeholder {
+				    color: #212121;
+				}
+		    }
+		    &-submit{
+				background-color: #FCD812;
+				border-radius: 2rem;
+				font-size: 1.5rem;
+				font-weight: bold;
+				padding: 1rem 4rem;
+				color: #191919;
+				letter-spacing: .5px;
+		    }
+		}
+	}
+}
+
+.menu-footer{
+	&__li{
+		list-style: none;
+		margin-bottom: 1.5rem;
+		&:last-child{margin-bottom: 0;}
+		&-link{
+			color: v.$blanco;
+			font-size: 1.7rem;
+			&:before{
+			    content: "\f054";
+			    font: normal 900 1em/1 "Font Awesome 6 Free";
+			    color: v.$amarillo;
+    			margin-right: 1.5rem;
+			}
+			&:hover{
+				transition: .3s all ease-in-out;
+				color: v.$amarillo;
+			}
+		}
+	}
 }
