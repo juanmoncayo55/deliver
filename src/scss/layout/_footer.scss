@@ -127,11 +127,12 @@
 		    row-gap: 2rem;
 		    &-input{
 			    font-size: 1.6rem;
+				font-weight: 600;
 		    	padding: 1rem;
 			    padding-left: 2rem;
 			    border-radius: 2rem;
 			    width: 100%;
-				font-weight: 600;
+				outline: none;
 			    &::placeholder {
 				    color: #212121;
 				}
