@@ -839,6 +839,41 @@ h3 {
   color: #191919;
   letter-spacing: 0.5px;
 }
+.footer-bottom {
+  background-color: #EB4846;
+  padding: 2rem;
+  border-top: 2px solid #291468;
+}
+.footer-bottom__contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-bottom__contenedor .text {
+  font-size: 1.8rem;
+}
+.footer-bottom__socialnetwork {
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+}
+.footer-bottom__socialnetwork .link-socialnetwork {
+  background-color: #AA0503;
+  border-radius: 5rem;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-bottom__socialnetwork .link-socialnetwork i {
+  color: #FFFFFF;
+  font-size: 1.6rem;
+}
+.footer-bottom__socialnetwork .link-socialnetwork:hover {
+  background-color: #191919;
+  transition: 0.3s all ease-in-out;
+}
 
 .menu-footer__li {
   list-style: none;

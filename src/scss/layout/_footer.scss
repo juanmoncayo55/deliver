@@ -148,6 +148,36 @@
 		    }
 		}
 	}
+	&-bottom{
+		background-color: v.$rojo;
+		padding: 2rem;
+		border-top: 2px solid #291468;
+		&__contenedor{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			& .text{ font-size: 1.8rem; }
+		}
+		&__socialnetwork{
+			display: flex;
+			justify-content: center;
+			column-gap: 1rem;
+			& .link-socialnetwork{
+				background-color: #AA0503;
+				border-radius: 5rem;
+				width: 35px;
+				height: 35px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				& i{ color: v.$blanco; font-size: 1.6rem; }
+				&:hover{
+					background-color: v.$negro;
+					transition: .3s all ease-in-out;
+				}
+			}
+		}
+	}
 }
 
 .menu-footer{
