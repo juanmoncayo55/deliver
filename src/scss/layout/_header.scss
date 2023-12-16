@@ -45,12 +45,19 @@
 	    font-size: 1.6rem;
 	    font-weight: bold;
 	    padding: 1rem 2rem;
+	    border: 2px solid v.$amarillo;
 		color: v.$negro;
+		transition: .3s all ease-in-out;
+	    &:hover{
+	        background-color: transparent;
+    		color: v.$amarillo;
+	    }
 	}
 }
 .navigation{
 	display: flex;
     column-gap: 3rem;
+    z-index: 1;
 	&-link{
 		color: v.$blanco;
 		font-weight: bold;
@@ -58,6 +65,46 @@
 		&:hover{
 			color: v.$amarillo;
 			transition: color .3s ease-in-out;
+		}
+		&__submenu{
+		    position: absolute;
+		    left: -1rem;
+		    top: 3rem;
+		    display: flex;
+		    flex-direction: column;
+		    background-color: v.$amarillo;
+		    width: 22rem;
+    		padding: 1rem 0.1rem;
+    		border-radius: 1.5rem;
+    		transition: .3s all ease-in-out;
+  		    transform: translateY(-1rem);
+    		opacity: 0;
+			&-link{
+				padding: 1rem 0;
+				padding-left: 1.5rem;
+				color: v.$negro;
+				&:hover{
+					background-color: v.$negro;
+					color: v.$blanco;
+				}
+			}
+		}
+	}
+	& .father-submenu{
+		position: relative;
+		&:hover > .navigation-link__submenu{
+			transform: translateY(0);
+    		opacity: 1;
+		}
+		& .navigation-link{
+			&:after {
+				content: "\f078";
+				font: normal 900 0.9em/1 "Font Awesome 6 Free";
+				margin-left: 0.8rem;
+			}
+			&__submenu-link{
+				transition: .1s all ease-in-out;
+			}
 		}
 	}
 }

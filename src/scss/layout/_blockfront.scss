@@ -33,6 +33,10 @@
 			padding-top: 2rem;
 			&-link img{
 				width: 135px;
+				transition: .3s all ease-in-out;
+				&:hover{
+					transform: scale(1.1);
+				}
 			}
 		}
 	}

@@ -34,7 +34,12 @@
 			    align-items: center;
 			    background-color: #5d3ebc;
 			    margin-right: 1rem;
+			   	transition: .3s all ease-in-out;
 			    & i{ font-size: 2.5rem; }
+			    &:hover{
+			    	background-color: v.$blanco;
+			    	& i{ color: #5d3ebc; }
+			    }
 			}
 			&-title{
 				color: #5d3ebc;
@@ -145,6 +150,8 @@
 				padding: 1rem 4rem;
 				color: #191919;
 				letter-spacing: .5px;
+				transition: .3s all ease-in-out;
+				&:hover{opacity: .7;cursor:pointer;}
 		    }
 		}
 	}

@@ -423,12 +423,19 @@ h3 {
   font-size: 1.6rem;
   font-weight: bold;
   padding: 1rem 2rem;
+  border: 2px solid #FCD812;
   color: #191919;
+  transition: 0.3s all ease-in-out;
+}
+.header-contact-button:hover {
+  background-color: transparent;
+  color: #FCD812;
 }
 
 .navigation {
   display: flex;
   column-gap: 3rem;
+  z-index: 1;
 }
 .navigation-link {
   color: #FFFFFF;
@@ -438,6 +445,44 @@ h3 {
 .navigation-link:hover {
   color: #FCD812;
   transition: color 0.3s ease-in-out;
+}
+.navigation-link__submenu {
+  position: absolute;
+  left: -1rem;
+  top: 3rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #FCD812;
+  width: 22rem;
+  padding: 1rem 0.1rem;
+  border-radius: 1.5rem;
+  transition: 0.3s all ease-in-out;
+  transform: translateY(-1rem);
+  opacity: 0;
+}
+.navigation-link__submenu-link {
+  padding: 1rem 0;
+  padding-left: 1.5rem;
+  color: #191919;
+}
+.navigation-link__submenu-link:hover {
+  background-color: #191919;
+  color: #FFFFFF;
+}
+.navigation .father-submenu {
+  position: relative;
+}
+.navigation .father-submenu:hover > .navigation-link__submenu {
+  transform: translateY(0);
+  opacity: 1;
+}
+.navigation .father-submenu .navigation-link:after {
+  content: "\f078";
+  font: normal 900 0.9em/1 "Font Awesome 6 Free";
+  margin-left: 0.8rem;
+}
+.navigation .father-submenu .navigation-link__submenu-link {
+  transition: 0.1s all ease-in-out;
 }
 
 .blockfront {
@@ -475,6 +520,10 @@ h3 {
 }
 .blockfront-paragraphs__apps-link img {
   width: 135px;
+  transition: 0.3s all ease-in-out;
+}
+.blockfront-paragraphs__apps-link img:hover {
+  transform: scale(1.1);
 }
 .blockfront-graphic img {
   animation: moto 1.5s ease-in-out infinite;
@@ -585,11 +634,17 @@ h3 {
 .good-message__boton {
   background-color: #4C3397;
   border-radius: 2rem;
+  border: 2px solid #4C3397;
   font-size: 1.6rem;
   font-weight: bold;
   padding: 1rem 2rem;
   color: #FFFFFF;
   display: inline-block;
+  transition: 0.3s all ease-in-out;
+}
+.good-message__boton:hover {
+  background-color: #fcd812;
+  color: #4C3397;
 }
 .good-message__cards {
   display: grid;
@@ -604,8 +659,8 @@ h3 {
   flex-direction: column;
   border-radius: 1.1rem;
   align-items: center;
-  align-items: stretch;
   justify-content: center;
+  overflow: hidden;
 }
 .good-message__cards-card:nth-child(1) {
   grid-row: 1/6;
@@ -625,10 +680,22 @@ h3 {
 }
 .good-message__cards-card img {
   width: 95%;
+  transition: 0.3s all ease-in-out;
+}
+.good-message__cards-card:hover > img {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .boton-card {
   border-radius: 1rem;
+  border: none;
+  text-align: center;
+  width: 100%;
+}
+.boton-card:hover {
+  background-color: #4C3397;
+  color: #FFFFFF;
 }
 
 .articles {
@@ -664,7 +731,12 @@ h3 {
   text-decoration: underline;
   font-weight: bold;
   font-size: 2.2rem;
+  display: block;
   margin: 1.5rem 0;
+  color: #212121;
+}
+.articles-article__title:hover {
+  text-decoration: none;
 }
 .articles-article__hour-publish {
   color: #4C3397;
@@ -683,6 +755,10 @@ h3 {
   padding: 1rem 2rem;
   color: #FFFFFF;
   display: inline-block;
+  transition: 0.3s all ease-in-out;
+}
+.articles-article__boton:hover {
+  background-color: #291468;
 }
 
 .footer {
@@ -719,9 +795,16 @@ h3 {
   align-items: center;
   background-color: #5d3ebc;
   margin-right: 1rem;
+  transition: 0.3s all ease-in-out;
 }
 .footer-contactInformation__logoText-span i {
   font-size: 2.5rem;
+}
+.footer-contactInformation__logoText-span:hover {
+  background-color: #FFFFFF;
+}
+.footer-contactInformation__logoText-span:hover i {
+  color: #5d3ebc;
 }
 .footer-contactInformation__logoText-title {
   color: #5d3ebc;
@@ -838,6 +921,11 @@ h3 {
   padding: 1rem 4rem;
   color: #191919;
   letter-spacing: 0.5px;
+  transition: 0.3s all ease-in-out;
+}
+.footer-manesite__formulario-submit:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 .footer-bottom {
   background-color: #EB4846;
