@@ -61,3 +61,10 @@
 		}
 	}
 }
+@media (max-width: 990px) {	.articles-contenedor{ column-gap: 2rem;	} }
+
+@media (max-width: 940px) {
+	.articles-article {
+    	flex: 1 1 100%;
+	}
+}

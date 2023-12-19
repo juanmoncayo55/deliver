@@ -923,6 +923,16 @@ h3 {
   background-color: #291468;
 }
 
+@media (max-width: 990px) {
+  .articles-contenedor {
+    column-gap: 2rem;
+  }
+}
+@media (max-width: 940px) {
+  .articles-article {
+    flex: 1 1 100%;
+  }
+}
 .footer {
   background-color: #4C3397;
   color: #FFFFFF;
@@ -1147,6 +1157,91 @@ h3 {
   color: #FCD812;
 }
 
+@media (max-width: 998px) {
+  .footer-manesite {
+    column-gap: 3rem;
+    row-gap: 4rem;
+  }
+  .footer-manesite__child {
+    flex: 1 1 45%;
+  }
+  .footer-contactInformation {
+    align-items: flex-start;
+  }
+  .footer-contactInformation__emailPhone {
+    flex-direction: column;
+    padding: 1rem 2rem;
+  }
+  .footer-contactInformation__emailPhone-sec {
+    justify-content: flex-start;
+    padding-left: 2rem;
+  }
+  .footer-contactInformation__emailPhone-sec i {
+    margin-right: 2rem;
+  }
+  .footer-contactInformation__emailPhone-sec:first-child {
+    border-bottom: 1px solid #291468;
+    padding-bottom: 1.5rem;
+  }
+  .footer-contactInformation__emailPhone-sec:last-child {
+    border-left: 0px;
+    padding-top: 1.5rem;
+  }
+}
+@media (max-width: 700px) {
+  .footer-contactInformation {
+    display: block;
+  }
+  .footer-contactInformation__logoText {
+    margin-bottom: 2rem;
+    grid-template-areas: "logo" "texto1" "texto2";
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-contactInformation__logoText-span {
+    margin: 0 auto;
+  }
+  .footer-contactInformation__logoText-title {
+    margin: 1rem 0;
+  }
+  .footer-contactInformation__logoText-subtitle {
+    line-height: 1.6rem;
+  }
+  .footer-contactInformation__emailPhone {
+    padding: 2rem;
+  }
+  .footer-contactInformation__emailPhone-sec {
+    grid-template-areas: "icono" "texto";
+    justify-content: center;
+    row-gap: 1rem;
+  }
+  .footer-contactInformation__emailPhone-sec span {
+    text-align: center;
+  }
+  .footer-manesite {
+    border-top: 0.05px solid #291468;
+    padding-top: 2rem;
+  }
+  .footer-manesite__child {
+    text-align: center;
+    flex: 1 1 100%;
+  }
+  .footer-manesite__child .menu-footer {
+    text-align: left;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .footer-manesite__s2-link img {
+    margin: 0 auto;
+  }
+  .footer-manesite__formulario-submit {
+    width: 100%;
+  }
+  .footer-bottom__contenedor {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+}
 .m-sectitle {
   display: flex;
   align-items: center;
