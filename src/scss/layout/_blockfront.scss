@@ -56,3 +56,25 @@
 		transform: translateY(0px);
 	}
 }
+
+
+@media (max-width: 890px) {
+	.blockfront-contenedor{
+		grid-template-columns: none;
+	    grid-template-rows: auto;
+	}
+	.blockfront-paragraphs{
+		grid-row: 2 / 3;
+		&__apps{
+			justify-content: space-between;
+		}
+	}
+	.blockfront-graphic{
+		grid-row: 1 / 2;
+		height: 400px;
+		& img{
+		    width: 100%;
+    		height: 100%;
+		}
+	}
+}

@@ -2,6 +2,7 @@
 $fuenteTitulo: 'BreeSerif';
 $fuenteTexto: 'Jost';
 
+//Colores
 $colorFondo: #f7f5ff;
 $purpura: #5D3EBC;
 $amarillo: #FCD812;
@@ -11,3 +12,9 @@ $purpuraOscuro:#4C3397;
 $grisClaro: #F4F4F4;
 $blanco: #FFFFFF;
 $negro: #191919;
+
+// Tamaños de MediaQueries
+$telefono: 480px;
+$tablet: 780px;
+$desktop: 992px;
+$desktopXL: 1200px;

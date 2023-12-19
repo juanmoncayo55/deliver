@@ -82,3 +82,24 @@
 		color:v.$blanco;
 	}
 }
+
+@media (max-width: 950px) {
+	.good-message-contenedor{
+	    grid-template-columns: 1fr;
+    	padding-top: 8rem;
+    	&__left{
+    		margin-bottom: 4rem;
+    		& .m-sectitle{ justify-content: center; }
+    	}
+	}
+}
+
+@media (max-width: 500px) {
+	.good-message__cards{
+	    display: block;
+    	&-card{
+    	    margin-bottom: 2rem;
+    	    &:last-child{ margin-bottom: 0; }
+    	}
+	}
+}

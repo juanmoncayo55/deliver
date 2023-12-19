@@ -10,7 +10,8 @@
 	    background-size: cover;
 	    background-position: top;
 	    position: absolute;
-	    top: 100%;
+	    top: 99.5%;
+    	z-index: -1;
 	    left: 0;
 	    right: 0;
 	    width: 100%;
@@ -52,6 +53,16 @@
 	        background-color: transparent;
     		color: v.$amarillo;
 	    }
+	}
+	&-contact-iconMenu{
+		display:none;
+	    width: 3.5rem;
+	    height: 3.5rem;
+	    background-color: #4c3397;
+	    justify-content: center;
+	    align-items: center;
+	    border-radius: 50%;
+	    & i{ color: v.$blanco; }
 	}
 }
 .navigation{
@@ -107,4 +118,84 @@
 			}
 		}
 	}
+	&__closeMbMenu{
+		display: none;
+	    background-color: #eb4846;
+	    color: black;
+	    padding: 0.5rem;
+	    font-size: 2rem;
+	    width: 3rem;
+	    border-radius: 8px;
+	    justify-content: center;
+	    align-items: center;
+	    margin: 0 0 0 auto;
+	}
 }
+
+@media (max-width: 990px) {
+	.header{ margin-bottom: 3rem; }
+	.header-contact-button{ display: none; }
+}
+
+@media (max-width: 800px) {
+	.header-contact-iconMenu{ display: flex; }
+	.navigation{
+		display: none;
+		&__closeMbMenu{
+			display:flex;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.header-logo{
+	    background-color: #4c3397;
+	    width: 3.5rem;
+	    height: 3.5rem;
+	    border-radius: 50%;
+	    padding: 0.3rem;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+		&__img{
+			width: 2.5rem;
+		}
+		&__title{
+			display: none;
+		}
+	}
+}
+.style-menuMb{
+	display:flex;
+	position: fixed;
+    left: 0;
+    background-color: #4c3397;
+    bottom: 0;
+    top: 0;
+    flex-direction: column;
+    padding: 2rem;
+    row-gap: 1rem;
+    min-width: 25rem;
+    max-width: 20rem;
+}
+.overlay{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 0;
+	background: rgba(76, 51, 151, 0.2784313725);
+}
+/*
+    position: fixed;
+    left: 0;
+    background-color: #4c3397;
+    bottom: 0;
+    top: 0;
+    flex-direction: column;
+    padding: 2rem;
+    row-gap: 1rem;
+    min-width: 25rem;
+    max-width: 20rem;
+*/
