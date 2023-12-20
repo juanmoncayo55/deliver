@@ -511,9 +511,6 @@ h3 {
 }
 
 @media (max-width: 990px) {
-  .header {
-    margin-bottom: 3rem;
-  }
   .header-contact-button {
     display: none;
   }
