@@ -28,7 +28,7 @@ function minImage(done){
 	const opciones = {
 		optimizationLevel: 3
 	}
-	src('src/img/**/*.{png,jpg}')
+	src('src/img/**/*.{png,jpg,svg}')
 		.pipe( cache( imagemin(opciones) ) )
 		.pipe( dest('build/img') )
 

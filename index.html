@@ -12,7 +12,7 @@
 		<header class="header">
 			<div class="contenedor header-contenedor">
 				<a href="#" class="header-logo">
-					<img src="src/img/icon-map.png" class="header-logo__img" alt="Logo de Deliveritta">
+					<img src="build/img/icon-map.png" class="header-logo__img" alt="Logo de Deliveritta">
 					<span class="header-logo__title">.Deliveritta</span>
 				</a>
 				<nav class="navigation header-navigation" id="navigation">
@@ -41,25 +41,33 @@
 			<div class="contenedor blockfront-contenedor">
 				<div class="blockfront-paragraphs">
 					<span class="blockfront-paragraphs__diagonal">
-						<img src="src/img/diagonal.svg" alt="Diagonal">
-						<img src="src/img/diagonal.svg" alt="Diagonal">
-						<img src="src/img/diagonal.svg" alt="Diagonal">
-						<img src="src/img/diagonal.svg" alt="Diagonal">
-						<img src="src/img/diagonal.svg" alt="Diagonal">
+						<img src="build/img/diagonal.svg" alt="Diagonal">
+						<img src="build/img/diagonal.svg" alt="Diagonal">
+						<img src="build/img/diagonal.svg" alt="Diagonal">
+						<img src="build/img/diagonal.svg" alt="Diagonal">
+						<img src="build/img/diagonal.svg" alt="Diagonal">
 					</span>
 					<h1 class="blockfront-paragraphs__title">We Provide Safe and Fast Delivery</h1>
 					<p class="blockfront-paragraphs__description">At Deliveritta, we understand the importance of timely and secure food delivery. Our commitment to providing safe and fast delivery services sets us apart and ensures that your dining experience is nothing short of exceptional.</p>
 					<div class="blockfront-paragraphs__apps">
 						<a href="#" class="blockfront-paragraphs__apps-link">
-							<img src="src/img/google-play-badge.png" alt="Imagen de Google Play Store">
+							<picture>
+								<source srcset="build/img/google-play-badge.avif" type="image/avif">
+								<source srcset="build/img/google-play-badge.webp" type="image/webp">
+								<img lazy="loadding" width="200" height="300" src="build/img/google-play-badge.jpg" alt="Imagen de Google Play Store" type="image/jpeg">
+							</picture>
 						</a>
 						<a href="#" class="blockfront-paragraphs__apps-link">
-							<img src="src/img/amazon-appstore-badge.png" alt="Imagen de ApleStore Store">
+							<picture>
+								<source srcset="build/img/amazon-appstore-badge.avif" type="image/avif">
+								<source srcset="build/img/amazon-appstore-badge.webp" type="image/webp">
+								<img lazy="loadding" width="200" height="300" src="build/img/amazon-appstore-badge.png" alt="Imagen de ApleStore Store" type="image/png">
+							</picture>
 						</a>
 					</div>
 				</div>
 				<div class="blockfront-graphic">
-					<img src="src/img/grafico.svg" alt="Grafico de Hombre en Moto">
+					<img src="build/img/grafico.svg" alt="Grafico de Hombre en Moto">
 				</div>
 			</div>
 		</section>
@@ -135,20 +143,36 @@
 				<a href="#" class="good-message__boton">Learn more.</a>
 			</div>
 			<div class="good-message-contenedor__right good-message__cards">
-				<div class="good-message__cards-card">
-					<img src="src/img/contenido/Partnership-pana.png" alt="Amigos dandose la mano">
+				<div class="good-message__cards-card">					
+					<picture>
+						<source srcset="build/img/contenido/Partnership-pana.avif" type="image/avif">
+						<source srcset="build/img/contenido/Partnership-pana.webp" type="image/webp">
+						<img lazy="loadding" width="200" height="300" src="build/img/contenido/Partnership-pana.jpg" alt="Amigos dandose la mano" type="image/jpeg">
+					</picture>
 					<p class="good-message__boton boton-card">Become a partner!</p>
 				</div>
-				<div class="good-message__cards-card">
-					<img src="src/img/contenido/Hamburger-bro.png" alt="Amigos dandose la mano">
+				<div class="good-message__cards-card">					
+					<picture>
+						<source srcset="build/img/contenido/Hamburger-bro.avif" type="image/avif">
+						<source srcset="build/img/contenido/Hamburger-bro.webp" type="image/webp">
+						<img lazy="loadding" width="200" height="300" src="build/img/contenido/Hamburger-bro.jpg" alt="Hamburguesa" type="image/jpeg">
+					</picture>
 					<p class="good-message__boton boton-card">Hungry?</p>
 				</div>
-				<div class="good-message__cards-card">
-					<img src="src/img/contenido/Deconstructed-food-brox.png" alt="Amigos dandose la mano">
+				<div class="good-message__cards-card">					
+					<picture>
+						<source srcset="build/img/contenido/Deconstructed-food-brox.avif" type="image/avif">
+						<source srcset="build/img/contenido/Deconstructed-food-brox.webp" type="image/webp">
+						<img lazy="loadding" width="200" height="300" src="build/img/contenido/Deconstructed-food-brox.jpg" alt="Comida destruida" type="image/jpeg">
+					</picture>
 					<p class="good-message__boton boton-card">Contact us</p>
 				</div>
-				<div class="good-message__cards-card">
-					<img src="src/img/contenido/Take-Away-bros.png" alt="Amigos dandose la mano">
+				<div class="good-message__cards-card">					
+					<picture>
+						<source srcset="build/img/contenido/Take-Away-bros.avif" type="image/avif">
+						<source srcset="build/img/contenido/Take-Away-bros.webp" type="image/webp">
+						<img lazy="loadding" width="200" height="300" src="build/img/contenido/Take-Away-bros.jpg" alt="Una tendera vendiendo productos" type="image/jpeg">
+					</picture>
 					<p class="good-message__boton boton-card">Become a seller!</p>
 				</div>
 			</div>
@@ -168,7 +192,11 @@
 				<h2 class="m-sectitle__title">Latest Articles</h2>
 			</div>
 			<article class="articles-article">
-				<img src="src/img/contenido/spaghetti.jpg" alt="Verduras y pastas" class="articles-article__image" height="250" width="100%">
+				<picture>
+					<source srcset="build/img/contenido/spaghetti.avif" class="articles-article__image" type="image/avif">
+					<source srcset="build/img/contenido/spaghetti.webp" class="articles-article__image" type="image/webp">
+					<img lazy="loadding" width="100%" height="250" src="build/img/contenido/spaghetti.jpg" class="articles-article__image" alt="Verduras y pastas" type="image/jpeg">
+				</picture>
 				<a href="#" class="articles-article__title">Nobis ut veniam alias</a>
 				<p class="articles-article__hour-publish">
 					<i class="fa-regular fa-clock"></i>
@@ -178,7 +206,11 @@
 				<a href="#" class="articles-article__boton">Read more</a>
 			</article>
 			<article class="articles-article">
-				<img src="src/img/contenido/oranges.jpg" alt="Verduras y pastas" class="articles-article__image" height="250" width="100%">
+				<picture>
+					<source srcset="build/img/contenido/oranges.avif" class="articles-article__image" type="image/avif">
+					<source srcset="build/img/contenido/oranges.webp" class="articles-article__image" type="image/webp">
+					<img lazy="loadding" width="100%" height="250" src="build/img/contenido/oranges.jpg" class="articles-article__image" alt="Naranjas" type="image/jpeg">
+				</picture>
 				<a href="#" class="articles-article__title">Dicta ut ullam voluptatem consequatur sed reiciendis</a>
 				<p class="articles-article__hour-publish">
 					<i class="fa-regular fa-clock"></i>
@@ -188,7 +220,11 @@
 				<a href="#" class="articles-article__boton">Read more</a>
 			</article>
 			<article class="articles-article">
-				<img src="src/img/contenido/mediterranean-cuisine.jpg" alt="Verduras y pastas" class="articles-article__image" height="250" width="100%">
+				<picture>
+					<source srcset="build/img/contenido/mediterranean-cuisine.avif" class="articles-article__image" type="image/avif">
+					<source srcset="build/img/contenido/mediterranean-cuisine.webp" class="articles-article__image" type="image/webp">
+					<img lazy="loadding" width="100%" height="250" src="build/img/contenido/mediterranean-cuisine.jpg" class="articles-article__image" alt="Productos del mediterraneo" type="image/jpeg">
+				</picture>
 				<a href="#" class="articles-article__title">Dicta est quo veritatis quisquam impedit repellendus</a>
 				<p class="articles-article__hour-publish">
 					<i class="fa-regular fa-clock"></i>
@@ -236,10 +272,18 @@
 					<p class="title">Download the App</p>
 					<div class="footer-manesite__s2-buttons">
 						<a href="#" class="footer-manesite__s2-link">
-							<img src="src/img/google-play-badge.png" alt="Imagen de google play">
+							<picture>
+								<source srcset="build/img/google-play-badge.avif" type="image/avif">
+								<source srcset="build/img/google-play-badge.webp" type="image/webp">
+								<img lazy="loadding" width="200" height="300" src="build/img/google-play-badge.jpg" alt="Imagen de Google Play Store" type="image/jpeg">
+							</picture>
 						</a>
 						<a href="#" class="footer-manesite__s2-link">
-							<img src="src/img/amazon-appstore-badge.png" alt="Imagen de appstore">
+							<picture>
+								<source srcset="build/img/amazon-appstore-badge.avif" type="image/avif">
+								<source srcset="build/img/amazon-appstore-badge.webp" type="image/webp">
+								<img lazy="loadding" width="200" height="300" src="build/img/amazon-appstore-badge.png" alt="Imagen de ApleStore Store" type="image/png">
+							</picture>
 						</a>
 					</div>
 				</div>
